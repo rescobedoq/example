@@ -1,0 +1,13 @@
+*.exe
+*.class
+*.pyc
+
+*.tex
+img/
+_*/
+src/
+*.aux
+*.log
+*.gz
+*.swp
+*.minted
