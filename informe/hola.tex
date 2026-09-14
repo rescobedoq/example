@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{graphicx} % Paquete obligatorio para imágenes
+\usepackage{minted2}
+\begin{document}
+Hola Mundo
+
+\begin{figure}[h]
+    \centering
+    % [width=0.5\textwidth] es opcional para escalar
+    \includegraphics[width=0.5\textwidth]{img/vim-icon.png}
+    \caption{Descripción de la imagen}
+    \label{fig:mi_imagen}
+\end{figure}
+
+\inputminted[linenos, breaklines]{javascript}{src/hola.js}
+
+\end{document}   

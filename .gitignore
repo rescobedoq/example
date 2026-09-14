@@ -4,7 +4,7 @@
 
 # El *.tex no se debería enviar
 # Si ahora lo he comentado es más que todo para que vean el código fuente del informe
-*.tex
+#*.tex
 img/
 _*/
 src/
