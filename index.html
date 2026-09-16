@@ -1,11 +1,602 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema Web de Gestión Académica</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <p>This is a simple HTML5 page.</p>
+
+<!-- =========================================================
+     1. NAVBAR
+========================================================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            SIGA
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Mostrar menú"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#cursos">
+                        Cursos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#noticias">
+                        Noticias
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#eventos">
+                        Eventos
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="d-flex gap-2">
+
+                <a href="#" class="btn btn-outline-light">
+                    Iniciar Sesión
+                </a>
+
+                <a href="#" class="btn btn-light text-primary">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     2. HERO SECTION - FLEXBOX
+========================================================= -->
+
+<section class="hero py-5">
+
+    <div class="container">
+
+        <div class="hero-contenido">
+
+            <div class="hero-texto">
+
+                <span class="badge bg-primary mb-3">
+                    Gestión Académica
+                </span>
+
+                <h1 class="display-4 fw-bold">
+                    Aprende, desarrolla y transforma tu futuro
+                </h1>
+
+                <p class="lead">
+                    Accede a cursos, eventos, noticias y recursos
+                    académicos desde una única plataforma.
+                </p>
+
+                <div class="d-flex gap-2 flex-wrap">
+
+                    <a href="#cursos" class="btn btn-primary btn-lg">
+                        Explorar cursos
+                    </a>
+
+                    <a href="#noticias"
+                       class="btn btn-outline-primary btn-lg">
+                        Ver noticias
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-imagen">
+
+                <img
+                    src="img/hero.jpg"
+                    alt="Estudiantes universitarios"
+                    class="img-fluid rounded shadow"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     3. CURSOS - CSS GRID
+========================================================= -->
+
+<section id="cursos" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Cursos Ofertados
+            </h2>
+
+            <p class="text-muted">
+                Explora nuestra oferta académica.
+            </p>
+
+        </div>
+
+
+        <div class="cursos-grid">
+
+            <!-- Curso 1 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-web.jpg"
+                    class="card-img-top"
+                    alt="Ingeniería Web"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Ingeniería Web
+                    </h5>
+
+                    <p class="card-text">
+                        Desarrollo de aplicaciones web modernas
+                        utilizando tecnologías frontend y backend.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Curso 2 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-programacion.jpg"
+                    class="card-img-top"
+                    alt="Programación"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Programación
+                    </h5>
+
+                    <p class="card-text">
+                        Fundamentos de programación y desarrollo
+                        de soluciones computacionales.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Curso 3 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-bd.jpg"
+                    class="card-img-top"
+                    alt="Bases de datos"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Bases de Datos
+                    </h5>
+
+                    <p class="card-text">
+                        Diseño, implementación y administración
+                        de bases de datos.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Curso 4 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-redes.jpg"
+                    class="card-img-top"
+                    alt="Redes de computadoras"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Redes de Computadoras
+                    </h5>
+
+                    <p class="card-text">
+                        Arquitectura, configuración y administración
+                        de redes informáticas.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Curso 5 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-ia.jpg"
+                    class="card-img-top"
+                    alt="Inteligencia Artificial"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Inteligencia Artificial
+                    </h5>
+
+                    <p class="card-text">
+                        Introducción a modelos y técnicas de
+                        inteligencia artificial.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Curso 6 -->
+
+            <article class="card curso-card">
+
+                <img
+                    src="img/curso-devops.jpg"
+                    class="card-img-top"
+                    alt="DevOps"
+                >
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        DevOps
+                    </h5>
+
+                    <p class="card-text">
+                        Integración, despliegue y automatización
+                        del ciclo de vida del software.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Ver curso
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     4. NOTICIAS Y EVENTOS
+========================================================= -->
+
+<section id="noticias" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Noticias y Eventos
+            </h2>
+
+            <p class="text-muted">
+                Mantente informado de nuestras actividades.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Noticia -->
+
+            <div class="col-md-6">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            Noticia
+                        </span>
+
+                        <h5 class="card-title">
+                            Inicio del semestre académico
+                        </h5>
+
+                        <p class="card-text">
+                            Conoce las principales actividades
+                            programadas para este semestre.
+                        </p>
+
+                        <button
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalNoticia"
+                        >
+                            Más información
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Evento -->
+
+            <div class="col-md-6" id="eventos">
+
+                <div class="card h-100 shadow-sm">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-2">
+                            Evento
+                        </span>
+
+                        <h5 class="card-title">
+                            Semana de Innovación Tecnológica
+                        </h5>
+
+                        <p class="card-text">
+                            Participa en conferencias, talleres y
+                            actividades relacionadas con tecnología.
+                        </p>
+
+                        <button
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalEvento"
+                        >
+                            Más información
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     5. MODAL NOTICIA
+========================================================= -->
+
+<div
+    class="modal fade"
+    id="modalNoticia"
+    tabindex="-1"
+    aria-labelledby="modalNoticiaLabel"
+    aria-hidden="true"
+>
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="modalNoticiaLabel">
+                    Inicio del semestre académico
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                ></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                Las actividades académicas del nuevo semestre
+                comenzarán de acuerdo con el calendario establecido
+                por la universidad.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     6. MODAL EVENTO
+========================================================= -->
+
+<div
+    class="modal fade"
+    id="modalEvento"
+    tabindex="-1"
+    aria-labelledby="modalEventoLabel"
+    aria-hidden="true"
+>
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="modalEventoLabel">
+                    Semana de Innovación Tecnológica
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                ></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                Durante esta semana se desarrollarán conferencias,
+                talleres y actividades relacionadas con innovación,
+                desarrollo de software e inteligencia artificial.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     7. FOOTER
+========================================================= -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        <p class="mb-0">
+            © 2026 Sistema Web de Gestión Académica
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
 </body>
-</html>   
+</html>
