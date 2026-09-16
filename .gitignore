@@ -2,14 +2,3 @@
 *.class
 *.pyc
 
-# El *.tex no se debería enviar
-# Si ahora lo he comentado es más que todo para que vean el código fuente del informe
-#*.tex
-img/
-_*/
-src/
-*.aux
-*.log
-*.gz
-*.swp
-*.minted
