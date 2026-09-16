@@ -1,29 +1,33 @@
 \documentclass{article}
 \usepackage{graphicx} % Paquete obligatorio para imágenes
 \usepackage{minted2}
+\usepackage{lipsum}
 \begin{document}
-Hola Mundo
 
-%\begin{figure}[h]
-%    \centering
-%    % [width=0.5\textwidth] es opcional para escalar
-%    \includegraphics[width=0.5\textwidth]{img/vim-icon.png}
-%    \caption{Descripción de la imagen}
-%    \label{fig:mi_imagen}
-%\end{figure}
+\lipsum[1]
+
+\begin{figure}[h]
+    \centering
+    % [width=0.5\textwidth] es opcional para escalar
+    \includegraphics[width=0.5\textwidth]{img/imagenParaInforme}
+    \caption{Descripción de la imagen}
+    \label{fig:mi_imagen}
+\end{figure}
 
 \inputminted[linenos, breaklines]{java}{src/insertion.java}
+\lipsum[1]
 
 \newpage
 
 \inputminted[linenos, breaklines]{html}{src/button.html}
+\lipsum[1]
 
 \newpage
-
 \inputminted[linenos, breaklines]{css}{src/curso-grid.css}
+\lipsum[1]
 
 \newpage
-
 \inputminted[linenos, breaklines]{javascript}{src/verificar.js}
+\lipsum[1]
 
 \end{document}   
